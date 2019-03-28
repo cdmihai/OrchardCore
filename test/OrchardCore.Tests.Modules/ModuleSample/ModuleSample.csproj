@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\OrchardCore\OrchardCore.Abstractions\OrchardCore.Abstractions.csproj" />
     <ProjectReference Include="..\..\..\src\OrchardCore\OrchardCore.Module.Targets\OrchardCore.Module.Targets.csproj" />
   </ItemGroup>
 
