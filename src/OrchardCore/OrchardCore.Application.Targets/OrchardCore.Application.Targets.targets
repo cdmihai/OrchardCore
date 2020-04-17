@@ -5,6 +5,10 @@
     Application that references it will embed in its assembly a list of the referenced modules.
   -->
 
+  <ItemGroup>
+    <ProjectReferenceTargets Include="Build" Targets="GetModuleProjectName" SkipNonexistentTargets="true" OuterBuild="true" />
+  </ItemGroup>
+
   <Target Name="ResolveModuleProjectReferences" AfterTargets="AfterResolveReferences">
     <MSBuild
       Targets="GetModuleProjectName"
